@@ -20,18 +20,27 @@
   margin-right: 10px;
 }
 
-.btn:hover,
-.btn:focus {
-  background-color: rgb(162, 240, 188);
-  color: black;
-}
-.btn:hover:nth-child(2n-1),
-.btn:focus:nth-child(2n-1) {
+li:hover .btn,
+li:focus .btn{
   background-color: rgb(134, 131, 131);
   color: black;
 }
+li:hover:nth-child(2n-1) .btn,
+li:focus:nth-child(2n-1) .btn{
+ background-color: rgb(162, 240, 188);
+  color: black;
+}
 
-.btn:hover:last-child {
+li:hover:last-child .btn{
   background-color: rgb(207, 97, 83);
   color: white;
+} 
+ 
+.buttonList {
+  display: inline-block;
 }
+
+.buttonList:not(:last-child) {
+  margin-right: 10px;
+}
+
